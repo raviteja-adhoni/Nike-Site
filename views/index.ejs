@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <title>Nike</title>
+  </head>
+  <body>
+    <main class="relative">
+      <%- include("./indexComponents/navigation.ejs") %>
+      <section class="xl:padding-l wide:padding-r padding-b">
+        <%- include('./indexComponents/hero.ejs') %>
+      </section>
+      <section class="padding">
+        <%- include('./indexComponents/popularProducts.ejs') %>
+      </section>
+      <section class="padding">
+        <%- include('./indexComponents/superQuality.ejs') %>
+      </section>
+      <section class="padding">
+        <%- include('./indexComponents/services.ejs') %>
+      </section>
+      <section class="padding">
+        <%- include('./indexComponents/specialOffers.ejs') %>
+      </section>
+      <section class="bg-pale-blue padding">
+        <%- include('./indexComponents/customerReview.ejs') %>
+      </section>
+      <section class="padding-x sm:py-32 py-16 w-full">
+        <%- include('./indexComponents/Subscribe.ejs') %>
+      </section>
+      <footer class="bg-black padding-x padding-t pb-8">
+        <%- include('./indexComponents/footer.ejs') %>
+      </footer>
+    </main>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
